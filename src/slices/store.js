@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+
+// Default export of reducers
+import carFormReducer from './carFormSlices';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    carForm: carFormReducer,
   },
 });
