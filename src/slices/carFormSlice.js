@@ -6,10 +6,12 @@ export const carFormReducer = createSlice({
         value: 0
     },
     reducers: {
-        increment: state => {
+        increment: (state) => {
+            console.log('increment');
             state.value += 1;
         },
-        decrement: state => {
+        decrement: (state) => {
+            console.log('decrement');
             state.value -= 1;
         },
     }
@@ -17,6 +19,9 @@ export const carFormReducer = createSlice({
 
 // Actions
 export const { increment, decrement } = carFormReducer.actions;
+
+// Selectors
+export const selectCount = state => state.carForm.value;
 
 // Reducers
 export default carFormReducer.reducer;
