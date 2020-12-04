@@ -21,13 +21,11 @@ function CarCard () {
     return (
         <Grid item xs={12} sm={3}>
             <Card>
-                <CardHeader
-                    title="Fiat Uno"
-                />
+                <CardHeader title="Fiat Uno" />
                 <CardContent>
-                <button onClick={() => dispatch(increment())}> + </button>
-                <span>{count}</span>
-                <button onClick={() => dispatch(decrement())}> - </button>
+                    <button onClick={() => dispatch(increment())}> + </button>
+                    <span>{count}</span>
+                    <button onClick={() => dispatch(decrement())}> - </button>
                 </CardContent>
             </Card>
         </Grid>
